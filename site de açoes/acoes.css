@@ -324,7 +324,54 @@ body {
   -webkit-text-fill-color: transparent;
   /* Deixa o fundo do texto transparente */
 }
+.carrocelDeSlides {
+  width: 100%;
+  height: 430px;
+  overflow: hidden;
+  position: relative;
+}
 
+.giroDosSlides {
+  display: flex;
+  width: 200%;
+  animation: rolar 12s infinite alternate ease-in-out;
+}
+
+.giroDosSlides img {
+  width: 100%;
+  height: auto;
+
+}
+.giroDosSlides:hover{
+  animation-play-state: paused;
+
+}
+  .imagemDoSlide1{
+    opacity: 1;
+    transition: 0.5;
+  }
+  .imagemDoSlide1:hover{
+    opacity: 0.5;
+
+  }
+  .imagemDoSlide2{
+    opacity: 1;
+    transition: 0.5;
+  }
+  .imagemDoSlide2:hover{
+    opacity: 0.5;
+  }
+  .imagemDoSlide3{
+    opacity: 1;
+    transition: 0.5;
+  }
+  .imagemDoSlide3:hover{
+    opacity: 0.5;
+  }
+@keyframes rolar {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 .chakra-petch-light {
   font-family: "Chakra Petch", serif;
   font-weight: 300;
